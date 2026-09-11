@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>행정정보 통합관리 기본법 - 조항 열람</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="title">행정정보 통합관리 기본법</h1>
+      <p class="subtitle">조항 구조 열람 · 검색</p>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="search-section">
+      <div class="search-box">
+        <label for="searchInput" class="sr-only">키워드 검색</label>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="본문 키워드 검색 (예: 행정안전부장관, 과태료, 데이터 표준…)"
+          autocomplete="off"
+        >
+        <button type="button" id="clearBtn" class="clear-btn" title="검색어 지우기" aria-label="검색어 지우기">×</button>
+      </div>
+      <p class="result-count" id="resultCount">전체 <strong>0</strong>개 조항</p>
+    </section>
+
+    <section class="cards-section" id="cardsContainer" aria-live="polite">
+      <!-- 조항 카드가 여기에 렌더링됩니다 -->
+    </section>
+
+    <p class="empty-msg" id="emptyMsg" hidden>검색 결과가 없습니다.</p>
+  </main>
+
+  <footer class="footer">
+    <p>(가상) 행정정보 통합관리 기본법 · 연습용 자료</p>
+  </footer>
+
+  <script src="APP.JS"></script>
+</body>
+</html>
